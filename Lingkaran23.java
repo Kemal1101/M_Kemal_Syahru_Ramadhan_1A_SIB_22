@@ -14,11 +14,11 @@ public class Lingkaran23{
         luas = phi * r * r;
 
 
-        System.out.print("Keliling Lingkaran: ");
-        System.out.println(keliling);
+        System.out.printf("Keliling Lingkaran: %f ",keliling);
+        // System.out.println(keliling);
 
-        System.out.print("Luas Lingkaran: ");
-        System.out.println(luas);
+        System.out.printf("Luas Lingkaran: %f ",luas);
+        // System.out.print(luas);
         
     }
 }
