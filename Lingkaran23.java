@@ -21,6 +21,7 @@ public class Lingkaran23{
         // System.out.print(luas);
 
         sc.close();
+        //close
         
     }
 }
