@@ -19,5 +19,7 @@ public class Gaji23 {
         TotGaji = (jmlMasuk * gaji) - (jmlTidakMasuk * potGaji);
         System.out.println("Gaji Yang Anda Terima adalah: " + TotGaji);
 
+        sc.close();
+
     }
 }

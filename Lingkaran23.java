@@ -19,6 +19,8 @@ public class Lingkaran23{
 
         System.out.printf("Luas Lingkaran: %f ",luas);
         // System.out.print(luas);
+
+        sc.close();
         
     }
 }

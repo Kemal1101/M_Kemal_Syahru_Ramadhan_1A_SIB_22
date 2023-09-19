@@ -32,5 +32,7 @@ public class HargaBayar23{
         System.out.println("Harga Sebelum Diskon adalah: " + total);
         System.out.println("Jumlah Diskon yang Anda Dapatakan adalah: " + jmlDiskon );
         System.out.println("Harga yang Harus Dibayar adalah: " + bayar);
+
+        sc.close();
     }
 }
