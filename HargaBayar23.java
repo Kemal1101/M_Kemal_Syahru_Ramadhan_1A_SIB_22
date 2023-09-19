@@ -34,5 +34,6 @@ public class HargaBayar23{
         System.out.println("Harga yang Harus Dibayar adalah: " + bayar);
 
         sc.close();
+        //close
     }
 }
