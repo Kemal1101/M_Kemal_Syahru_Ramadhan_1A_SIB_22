@@ -21,6 +21,5 @@ public class Gaji23 {
 
         sc.close();
         //close
-
     }
 }
