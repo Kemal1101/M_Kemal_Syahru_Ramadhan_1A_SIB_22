@@ -20,6 +20,6 @@ public class Gaji23 {
         System.out.println("Gaji Yang Anda Terima adalah: " + TotGaji);
 
         sc.close();
-        //close
+        //close//
     }
 }
