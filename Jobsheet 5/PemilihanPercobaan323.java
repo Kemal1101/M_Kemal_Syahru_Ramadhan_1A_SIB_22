@@ -20,7 +20,7 @@ public class PemilihanPercobaan323{
             case '+':
                 hasil = angka1 + angka2;
                 System.out.println(angka1 + " + " + angka2 + " = " + hasil);
-                break;
+                break; 
 
             case '-':
                 hasil = angka1 - angka2;
@@ -41,6 +41,7 @@ public class PemilihanPercobaan323{
                 System.out.println("ga ada bang");
                 break;
             }
+            //close
             input23.close();
     }
 }

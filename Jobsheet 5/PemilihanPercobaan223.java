@@ -61,6 +61,7 @@ public class PemilihanPercobaan223{
     }else {System.out.println("COBA LAGI");}
 
     input23.close();
+    //close
 
 }   
 }
