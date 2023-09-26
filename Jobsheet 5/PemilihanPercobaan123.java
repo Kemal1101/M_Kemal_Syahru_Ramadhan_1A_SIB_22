@@ -12,7 +12,7 @@ public class PemilihanPercobaan123{
         System.out.println(hasil);
         
 
-        
+        input23.close();
     }
 }
 
