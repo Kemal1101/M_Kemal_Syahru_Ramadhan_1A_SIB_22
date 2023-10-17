@@ -32,5 +32,6 @@ public class DoWhileCuti22 {
             break;
            }
         }while (jatahCuti > 0);
+        System.out.println("Sisa Jatah Cuti Anda Adalah: " + jatahCuti);
     }
 }

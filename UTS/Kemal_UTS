@@ -1,0 +1,60 @@
+import java.util.Scanner;
+public class UTS_Kemal_1A_SIB{
+    public static void main(String[] args) {
+        
+    
+    Scanner sc = new Scanner (System.in);
+
+    int potensiAkademik, bahasaInggris, wawancara, jumlahMahasiswa, i = 1;
+    float nilaiAkhir;
+    String jurusan;
+
+    System.out.print("Masukkan Jumlah Calon Mahasiwa: ");
+    jumlahMahasiswa = sc.nextInt();
+
+    while (i <= jumlahMahasiswa){
+    System.out.println("MASUKKAN NILAI MAHASISWA KE " + i);
+    System.out.print("Masukkan Nilai Potensi Akademik (0-100): ");
+    potensiAkademik = sc.nextInt();
+    System.out.print("Masukkan Nilai Tes Bahasa Inggris (0-100): ");
+    bahasaInggris = sc.nextInt();
+    System.out.print("Masukkan Nilai Wawancara (0-100): ");
+    wawancara = sc.nextInt();
+    nilaiAkhir = (potensiAkademik * 0.5F) + (bahasaInggris * 0.3F) + (wawancara * 0.2F);
+
+    System.out.print("1. Sistem Informasi\n2. Ilmu Komputer\n3. Bisnis Manajemen\n4. Teknik Informatika\nMasukkan Angka dari Jurusan yang Anda Daftar: ");
+    jurusan = sc.next();
+    if (jurusan.equalsIgnoreCase("1")){
+        if(bahasaInggris >= 70 && wawancara > 80){
+            System.out.println("Mahasiswa LOLOS");
+        }else{
+            System.out.println("Mahasiswa TIDAK LOLOS");
+        }
+    }else if (jurusan.equalsIgnoreCase("2")){
+        if((potensiAkademik > 70 && bahasaInggris > 70 && wawancara > 70) || potensiAkademik == 100 || bahasaInggris == 100 || wawancara == 100){
+            System.out.println("Mahasiswa LOLOS");
+        }else {
+            System.out.println("Mahasiswa TIDAK LOLOS");
+        }
+    }else if (jurusan.equalsIgnoreCase("3")) {
+        if (nilaiAkhir >= 75 && bahasaInggris >= 50){
+            System.out.println("Mahasiswa LOLOS");
+        }else{
+            System.out.println("Mahasiswa TIDAK LOLOS");
+        }
+    }else if (jurusan.equalsIgnoreCase("4")){
+        if ((potensiAkademik >= 60 && bahasaInggris >= 60 && wawancara >= 60) || (potensiAkademik == 100 && bahasaInggris == 100) ){
+            System.out.println("Mahasiswa LOLOS");
+        }else{
+            System.out.println("Mahasiswa TIDAK LOLOS");
+        }
+    }else{
+        System.out.println("Input eror");
+    }
+
+    i++;
+}
+
+
+    }   
+}

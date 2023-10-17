@@ -20,3 +20,5 @@ public class ForKelipatan22 {
          System.out.printf("rata-rata bilangan kelipatan %d dari 1 sampai 50 adalah %.2f \n",kelipatan, rataRata);
 }
 }
+
+//jumlah = jumlah +i
