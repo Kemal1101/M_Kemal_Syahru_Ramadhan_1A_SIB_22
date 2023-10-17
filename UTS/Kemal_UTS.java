@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class UTS_Kemal_1A_SIB{
+public class Kemal_UTS{
     public static void main(String[] args) {
         
     
