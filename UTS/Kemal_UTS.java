@@ -79,7 +79,8 @@ public class Kemal_UTS{
     }
     i++;
 }
-System.out.println("PENGUMUMAN HASIL");
+System.out.println("---------------------");
+System.out.println("  PENGUMUMAN HASIL");
 System.out.println("---------------------");
 int j = 0, k = 1, l = 0, m = 0, n = 0;
 while (j < jumlahMahasiswa){
