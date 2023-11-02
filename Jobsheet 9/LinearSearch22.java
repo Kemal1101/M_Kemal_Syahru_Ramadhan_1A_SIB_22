@@ -16,15 +16,16 @@ public class LinearSearch22 {
         System.out.print("Masukkan Key Yang Ingin Dicari = ");
         key = sc.nextInt();
 
+         boolean ditemukan = false;
         for(int i = 0 ; i < jumlahElemen ; i++){
             if (key == ArrayInt [i] ){
                 System.out.print("Key ada dalam array pada posisi indeks ke- " + i);
-                break;
-            }else {
-                System.out.println("Key Tidak Ditemukan");
+                ditemukan = true;
                 break;
             }
-            
+        }
+        if(ditemukan == false){
+            System.out.println("Key Tidak Ditemukan");
         }
     }
 }
