@@ -34,7 +34,6 @@ public class BioskopWithScanner22 {
                     barisSudah = baris;
                     kolomSudah = kolom;
                     
-
                     System.out.print("Input Penonton lainnya? (y/n): ");
                     next = sc.next();
                     if (next.equalsIgnoreCase("n")){
@@ -52,6 +51,8 @@ public class BioskopWithScanner22 {
                     System.out.println("Penonton dalam baris ke-" + (i+1) + " : " + String.join(", ", penonton[i]));    
                 }
 
+            }else if (!(menu.equalsIgnoreCase("1") || menu.equalsIgnoreCase("2") || menu.equalsIgnoreCase("3"))) {
+                System.out.println("SILAHKAN COBA LAGI");
             }
         }while (!(menu.equalsIgnoreCase("3")));
         
