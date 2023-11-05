@@ -3,7 +3,7 @@ public class BioskopWithScanner22 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int baris, kolom, barisSudah = -1, kolomSudah = -1;
+        int baris, kolom;
         String nama, next, menu;
         String penonton[][] = new String[4][2];
 
@@ -20,19 +20,26 @@ public class BioskopWithScanner22 {
                     baris = sc.nextInt();
                     System.out.print("Masukkan Kolom: ");
                     kolom = sc.nextInt();
-                    
-                    while (barisSudah == baris && kolomSudah == kolom){
-                        System.out.println("Kursi tersebut sudah terisi.\nSilahkan pilih kursi lain");
+                    while (baris > penonton.length || kolom >= 3 ){
+                        System.out.println("Kursi tidak tersedia. Silahkan coba lagi");
                         System.out.print("Masukkan Baris: ");
                         baris = sc.nextInt();
                         System.out.print("Masukkan Kolom: ");
                         kolom = sc.nextInt();
-
+                    }                    
+                    for (int i = 0 ; i < penonton.length ; i++ ){
+                        for (int j = 0 ; j < penonton[i].length ; j++){
+                            if (penonton [i][j] != null && i == (baris - 1) && j == (kolom - 1)){
+                                System.out.println("Kursi tersebut sudah terisi.\nSilahkan pilih kursi lain");
+                                System.out.print("Masukkan Baris: ");
+                                baris = sc.nextInt();
+                                System.out.print("Masukkan Kolom: ");
+                                kolom = sc.nextInt();
+                                i = 0;
+                            }
+                        }
                     }
-
                     penonton [baris - 1][kolom - 1] = nama;
-                    barisSudah = baris;
-                    kolomSudah = kolom;
                     
                     System.out.print("Input Penonton lainnya? (y/n): ");
                     next = sc.next();
