@@ -29,13 +29,12 @@ public class BioskopWithScanner22 {
                     }                    
                     for (int i = 0 ; i < penonton.length ; i++ ){
                         for (int j = 0 ; j < penonton[i].length ; j++){
-                            if (penonton [i][j] != null && i == (baris - 1) && j == (kolom - 1)){
+                            if (penonton [baris -1][kolom - 1] != null){
                                 System.out.println("Kursi tersebut sudah terisi.\nSilahkan pilih kursi lain");
                                 System.out.print("Masukkan Baris: ");
                                 baris = sc.nextInt();
                                 System.out.print("Masukkan Kolom: ");
                                 kolom = sc.nextInt();
-                                i = 0;
                             }
                         }
                     }
