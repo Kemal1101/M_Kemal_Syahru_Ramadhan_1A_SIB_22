@@ -52,7 +52,7 @@ public class BioskopWithScanner22 {
                     for (int j = 0 ; j < 2 ; j++){ 
                         if (penonton [i][j] == null){
                             penonton[i][j] = "****";
-                        }   
+                        }       
                     }
                     System.out.println("Penonton dalam baris ke-" + (i+1) + " : " + String.join(", ", penonton[i]));    
                 }
