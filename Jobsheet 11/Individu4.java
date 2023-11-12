@@ -6,7 +6,7 @@
             String inputCabor, namaAtlit, konfirmasi, konfirmasi2;
 
             do{
-                System.out.print("Cabang Olahraga yang akan di data\n1. Badminton\n2. Tenis meja\n3. Basket\n4. Bola Voli\n5. Exit\nMasukkan angka dari daftar CABOR: ");
+                System.out.print("Cabang Olahraga yang akan di data\n1. Badminton\n2. Tenis meja\n3. Basket\n4. Bola Voli\nMasukkan angka dari daftar CABOR: ");
                 inputCabor = sc.nextLine();
                 if (inputCabor.equalsIgnoreCase("1")){
                     for (int i = 0 ; i < cabor[0].length ; i++){
