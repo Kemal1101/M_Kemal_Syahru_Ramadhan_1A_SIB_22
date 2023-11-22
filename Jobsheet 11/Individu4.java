@@ -82,7 +82,7 @@ public class Individu4 {
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < cabor[i].length; j++) {
                 if (cabor[i][j] == null) {
-                    cabor[i][j] = "kosong";
+                    cabor[i][j] = "\"kosong\"";
                 }
             }
         }

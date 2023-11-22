@@ -15,6 +15,7 @@ public class Bioskop22{
         System.out.printf("%s \t %s \n", penonton[1][0], penonton[1][1]);
         System.out.printf("%s \t %s \n", penonton[2][0], penonton[2][1]);
         System.out.printf("%s \t %s \n", penonton[3][0], penonton[3][1]);
+        System.out.println(penonton[3][2]);
 
         System.out.println("Banyak baris adalah: " + penonton.length);
         for (String barisPenonton [] : penonton){
